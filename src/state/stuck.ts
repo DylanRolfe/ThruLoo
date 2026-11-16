@@ -95,30 +95,47 @@ function nearestWall(x: number, y: number): { x: number; y: number; dist: number
 
 const insideAnySolid = (x: number, y: number) => (solid ?? []).some((o) => distanceToBuilding(o.b, x, y) < 0);
 
-/** Put the character on the nearest outdoor path, then a few metres further from the wall. */
-export function getUnstuck() {
-  const hit = getWorld().graph.snap(player.x, player.y, 400, outdoorProfile);
-  if (hit) {
-    let { x, y } = hit;
-    const wall = nearestWall(x, y);
-    if (wall && wall.dist < CLEARANCE) {
-      // Away from the wall; fall back to shorter pushes if that runs into another building.
-      let dx = x - wall.x, dy = y - wall.y;
-      const len = Math.hypot(dx, dy);
-      if (len < 1e-6) [dx, dy] = [x - player.x, y - player.y];
-      const l = Math.hypot(dx, dy) || 1;
-      dx /= l;
-      dy /= l;
-      for (const push of [CLEARANCE - wall.dist, (CLEARANCE - wall.dist) * 0.66, (CLEARANCE - wall.dist) * 0.33]) {
-        const nx = x + dx * push, ny = y + dy * push;
-        if (!insideAnySolid(nx, ny)) {
-          [x, y] = [nx, ny];
-          break;
-        }
+/** The nearest spot on an outdoor path to (px, py), a few metres clear of any wall, or null. Never inside a building. */
+export function outdoorSpot(px: number, py: number): { x: number; y: number } | null {
+  const hit = getWorld().graph.snap(px, py, 400, outdoorProfile);
+  if (!hit) return null;
+  let { x, y } = hit;
+  const wall = nearestWall(x, y);
+  if (wall && wall.dist < CLEARANCE) {
+    // Away from the wall; fall back to shorter pushes if that runs into another building.
+    let dx = x - wall.x, dy = y - wall.y;
+    const len = Math.hypot(dx, dy);
+    if (len < 1e-6) [dx, dy] = [x - px, y - py];
+    const l = Math.hypot(dx, dy) || 1;
+    dx /= l;
+    dy /= l;
+    for (const push of [CLEARANCE - wall.dist, (CLEARANCE - wall.dist) * 0.66, (CLEARANCE - wall.dist) * 0.33]) {
+      const nx = x + dx * push, ny = y + dy * push;
+      if (!insideAnySolid(nx, ny)) {
+        [x, y] = [nx, ny];
+        break;
       }
     }
-    player.teleport = { x, y, h: 0, indoor: false };
   }
+  return { x, y };
+}
+
+/** Put the character on the nearest outdoor path, then a few metres further from the wall. */
+export function getUnstuck() {
+  const spot = outdoorSpot(player.x, player.y);
+  if (spot) player.teleport = { x: spot.x, y: spot.y, h: 0, indoor: false };
   stuckFor = 0;
   useApp.getState().set({ stuck: false });
+}
+
+/** Drop-pin teleport: move the character to the path nearest the pin and go to walking view. Returns false if nothing is near. */
+export function teleportToPin(px: number, py: number): boolean {
+  const spot = outdoorSpot(px, py);
+  if (!spot) return false;
+  player.teleport = { x: spot.x, y: spot.y, h: 0, indoor: false };
+  stuckFor = 0;
+  const app = useApp.getState();
+  app.set({ stuck: false, follow: false, selected: null, pin: null });
+  app.setMode('walk');
+  return true;
 }

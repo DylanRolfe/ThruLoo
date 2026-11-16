@@ -43,6 +43,8 @@ interface AppState {
   showIndoor: boolean;
   /** Building or point picked on the map, waiting for "from here" / "to here". */
   selected: Place | null;
+  /** Where the dropped pin stands on the map: the exact spot clicked. */
+  pin: { x: number; y: number } | null;
   flyPlaying: boolean;
   flyDone: boolean;
   /** The Beta feedback sheet is open. */
@@ -87,7 +89,8 @@ interface AppState {
   setTo(place: Place | null): void;
   swap(): void;
   setRouteMode(mode: RouteMode): void;
-  select(place: Place | null): void;
+  /** Pick a place. `pin` is where on the map it was clicked, which can be inside a building. */
+  select(place: Place | null, pin?: { x: number; y: number }): void;
   clearRoute(): void;
   recompute(): void;
   startFly(): void;
@@ -109,6 +112,7 @@ export const useApp = create<AppState>((set, get) => ({
   routeFallback: false,
   showIndoor: false,
   selected: null,
+  pin: null,
   flyPlaying: false,
   flyDone: false,
   feedbackOpen: false,
@@ -168,7 +172,7 @@ export const useApp = create<AppState>((set, get) => ({
     set({ from: to, to: from.kind === 'me' ? mePlace() : from });
     get().recompute();
   },
-  select: (place) => set({ selected: place }),
+  select: (place, pin) => set({ selected: place, pin: place ? (pin ?? (place.kind === 'point' ? { x: place.x, y: place.y } : null)) : null }),
   setRouteMode(routeMode) {
     if (routeMode === get().routeMode) return;
     set({ routeMode });

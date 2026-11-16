@@ -128,8 +128,9 @@ function Pin({ x, y, h = 0, kind }: { x: number; y: number; h?: number; kind: 's
 export function RouteLine() {
   const route = useApp((s) => s.route);
   const selected = useApp((s) => s.selected);
+  const pin = useApp((s) => s.pin);
   if (!route) {
-    return selected?.kind === 'point' ? <Pin x={selected.x} y={selected.y} kind="start" /> : null;
+    return selected && pin ? <Pin x={pin.x} y={pin.y} kind="start" /> : null;
   }
   const p = route.points, e = route.elev;
   return (
@@ -137,7 +138,7 @@ export function RouteLine() {
       <RouteRibbon route={route} />
       <Pin x={p[0]} y={p[1]} h={e[0] * FLOOR_HEIGHT} kind="start" />
       <Pin x={p[p.length - 2]} y={p[p.length - 1]} h={e[e.length - 1] * FLOOR_HEIGHT} kind="end" />
-      {selected?.kind === 'point' && <Pin x={selected.x} y={selected.y} kind="start" />}
+      {selected && pin && <Pin x={pin.x} y={pin.y} kind="start" />}
     </>
   );
 }

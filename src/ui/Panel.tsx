@@ -11,6 +11,7 @@ import { getWorld } from '../state/world';
 import { splitText, summarise } from './directions';
 import { arrivalText, formatDistance, formatMinutes } from './format';
 import { startNav } from '../state/gps';
+import { teleportToPin } from '../state/stuck';
 import { ChevronIcon, CloseIcon, GoIcon, PlayIcon, SwapIcon } from './icons';
 import { NavSteps } from './Nav';
 import { useCompact } from './layout';
@@ -85,6 +86,7 @@ export function Panel() {
             <button type="button" className="btn" onClick={() => setFrom(selected)}>
               Start from here
             </button>
+            <TeleportButton />
             <button type="button" className="x-btn" onClick={() => select(null)} aria-label="Dismiss">
               <CloseIcon />
             </button>
@@ -128,6 +130,19 @@ export function Legend() {
   );
 }
 
+/** Teleports the character to the path nearest the dropped pin (never into a building). */
+function TeleportButton() {
+  const selected = useApp((s) => s.selected);
+  const pin = useApp((s) => s.pin);
+  const target = pin ?? (selected ? { x: selected.x, y: selected.y } : null);
+  if (!target) return null;
+  return (
+    <button type="button" className="btn" onClick={() => teleportToPin(target.x, target.y)} title="Put your character on the nearest path to this pin">
+      Teleport here
+    </button>
+  );
+}
+
 /** Phone: the building tapped on the map, as a bottom sheet. */
 export function PickedSheet() {
   const selected = useApp((s) => s.selected);
@@ -151,6 +166,7 @@ export function PickedSheet() {
         <button type="button" className="btn" onClick={() => setFrom(selected)}>
           Start here
         </button>
+        <TeleportButton />
       </div>
     </section>
   );

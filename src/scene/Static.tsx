@@ -140,7 +140,7 @@ export function Buildings({ world }: { world: World }) {
     e.stopPropagation();
     const b = campus.buildings[buildingAtTriangle(triStart, e.faceIndex)];
     // Buildings without a door (off-campus context) fall back to a dropped pin beside them.
-    select(places.forBuilding(b.id) ?? pointPlace(e.point.x, -e.point.z));
+    select(places.forBuilding(b.id) ?? pointPlace(e.point.x, -e.point.z), { x: e.point.x, y: -e.point.z });
   };
 
   // No tinted shells while the character is inside one: it would wash out the hallways.
