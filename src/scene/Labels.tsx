@@ -64,10 +64,12 @@ export function Labels({ world, container }: { world: World; container: HTMLElem
   }, [items, container]);
 
   useFrame(() => {
-    // Every other frame is plenty for text.
-    if (frame.current++ % 2) return;
     const app = useApp.getState();
     const mode = app.mode;
+    // Every other frame is plenty for text while walking; on the map every frame, or names trail behind a drag.
+    if (mode !== 'map' && frame.current++ % 2) return;
+    // The camera moved earlier this frame; its view matrix is only refreshed at render, which is after this.
+    camera.updateMatrixWorld();
     const camH = camera.position.y;
     const strongIds = new Set([app.to?.building, app.from.building, app.selected?.building]);
 

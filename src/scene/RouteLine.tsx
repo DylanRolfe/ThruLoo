@@ -84,12 +84,12 @@ function RouteRibbon({ route }: { route: Route }) {
   );
 }
 
-function Pin({ x, y, h = 0, kind }: { x: number; y: number; h?: number; kind: 'start' | 'end' }) {
+function Pin({ x, y, h = 0, kind }: { x: number; y: number; h?: number; kind: 'start' | 'end' | 'drop' }) {
   const group = useRef<THREE.Group>(null!);
   useFrame(({ clock }) => {
     const g = group.current;
     // Small beside the walker, readable from the flythrough camera, constant on screen from the map.
-    const s = Math.max(0.45, Math.min(focus.height * 0.06, 1.3), focus.height * 0.014);
+    const s = kind === 'drop' ? Math.max(0.5, focus.height * 0.0055) : Math.max(0.45, Math.min(focus.height * 0.06, 1.3), focus.height * 0.014);
     g.scale.setScalar(s);
     g.position.set(x, h + (kind === 'end' ? (focus.height < 40 ? 2.6 : 0.4) + (Math.sin(clock.elapsedTime * 2.4) * 0.25 + 0.25) * s : 0.1), -y);
   });
@@ -107,6 +107,7 @@ function Pin({ x, y, h = 0, kind }: { x: number; y: number; h?: number; kind: 's
       </group>
     );
   }
+  // A dropped pin and the destination pin share a shape; the dropped one is smaller on the map.
   return (
     <group ref={group}>
       <mesh position={[0, 2.6, 0]} renderOrder={13}>
@@ -130,7 +131,7 @@ export function RouteLine() {
   const selected = useApp((s) => s.selected);
   const pin = useApp((s) => s.pin);
   if (!route) {
-    return selected && pin ? <Pin x={pin.x} y={pin.y} kind="start" /> : null;
+    return selected && pin ? <Pin x={pin.x} y={pin.y} kind="drop" /> : null;
   }
   const p = route.points, e = route.elev;
   return (
@@ -138,7 +139,7 @@ export function RouteLine() {
       <RouteRibbon route={route} />
       <Pin x={p[0]} y={p[1]} h={e[0] * FLOOR_HEIGHT} kind="start" />
       <Pin x={p[p.length - 2]} y={p[p.length - 1]} h={e[e.length - 1] * FLOOR_HEIGHT} kind="end" />
-      {selected && pin && <Pin x={pin.x} y={pin.y} kind="start" />}
+      {selected && pin && <Pin x={pin.x} y={pin.y} kind="drop" />}
     </>
   );
 }
