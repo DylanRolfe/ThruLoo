@@ -2,7 +2,7 @@
   "name": "uw-campus-3d",
   "private": true,
   "license": "GPL-3.0-only",
-  "repository": { "type": "git", "url": "https://github.com/DylanRolfe/Waterloo-Walk.git" },
+  "repository": { "type": "git", "url": "https://github.com/DylanRolfe/ThruLoo.git" },
   "version": "0.1.0",
   "type": "module",
   "description": "Walkable 3D model of the University of Waterloo campus with walking routes and route flythroughs.",

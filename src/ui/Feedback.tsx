@@ -10,7 +10,7 @@ export const FEEDBACK_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeuzNjUaOt
 const INSTAGRAM_URL = 'https://www.instagram.com/_dylanr8/';
 const LINKEDIN_URL = 'https://www.linkedin.com/in/dylanrolfe/';
 /** ThruLoo is GPL-3.0; this is where its source code is published. */
-export const SOURCE_URL = 'https://github.com/DylanRolfe/Waterloo-Walk';
+export const SOURCE_URL = 'https://github.com/DylanRolfe/ThruLoo';
 const WATISGRASS_URL = 'https://github.com/rickyqin005/WATIsGrass';
 const OSM_URL = 'https://www.openstreetmap.org/copyright';
 
