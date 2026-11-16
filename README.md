@@ -94,4 +94,5 @@ ThruLoo is free software under the **GNU General Public License v3.0 only**: see
 - Indoor and tunnel routing data: [WATIsGrass](https://github.com/rickyqin005/WATIsGrass) by Ricky Qin and Manasva Katyal, licensed under the GNU GPL v3.0. The two data files are kept unchanged in `data/indoor/watisgrass/` with their licence; the app's route graph is generated from them. See `data/indoor/README.md`.
 - Map data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), Open Database License (ODbL).
 - Fonts: Barlow and Barlow Condensed, SIL Open Font License 1.1.
+- ThruLoo is an independent student project, not affiliated with or endorsed by the University of Waterloo.
 - This repository contains no University of Waterloo copyrighted material (no floor plans, official maps or scraped university pages).
