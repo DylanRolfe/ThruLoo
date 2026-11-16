@@ -1,0 +1,47 @@
+{
+  "_readme": [
+    "Hand corrections applied on top of OSM by scripts/build-geojson.mjs. Survives re-fetching.",
+    "buildings: keyed by OSM id ('way/123' or 'relation/123'). Fields, all optional:",
+    "  height (metres), code, name, aliases (array), campus (true/false), hidden (true drops the building).",
+    "See data/reports/height-estimates.csv for buildings whose height is currently a guess.",
+    "places: extra named places for search. lat/lon, optional building (OSM id) to snap to that building's nearest door.",
+    "spawn: id of the place where the player starts.",
+    "REV West Quad is a best guess (the western wing of way/43250589). Move its lat/lon if the owner says a different wing is West."
+  ],
+  "buildings": {
+    "way/1342934521": {
+      "code": "M3"
+    },
+    "way/175808262": {
+      "code": "RAC"
+    },
+    "way/175808266": {
+      "code": "RA2"
+    },
+    "way/170097694": {
+      "code": "TJB"
+    },
+    "way/731803685": {
+      "code": "AVR"
+    },
+    "way/141711583": {
+      "code": "BRH"
+    }
+  },
+  "places": [
+    {
+      "id": "rev-west-quad",
+      "label": "REV West Quad",
+      "sub": "Ron Eydt Village",
+      "aliases": [
+        "REV West",
+        "REV W",
+        "West Quad"
+      ],
+      "lat": 43.470721,
+      "lon": -80.554697,
+      "building": "way/43250589"
+    }
+  ],
+  "spawn": "rev-west-quad"
+}

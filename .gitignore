@@ -1,0 +1,27 @@
+node_modules/
+dist/
+.env
+.env.*
+*.log
+.DS_Store
+test-results/
+.playwright-mcp/
+WATIsGrass-main/
+.codex/
+
+# Official floor-plan PDFs (UW login required to obtain them) and pipeline debug output
+data/plant-operations/
+floorplans/
+data/indoor/debug/
+
+# Private readings of the floor plans (facts only, input to the schematic step)
+data/indoor/private/
+data/reports/floorplans.json
+data/reports/floorplans.md
+# Playwright CLI output (may contain credentials)
+.playwright-cli/
+
+# Promo video project and its captures: local only, not part of the app
+promo/
+# Local Claude skill, not part of the app
+.claude/skills/

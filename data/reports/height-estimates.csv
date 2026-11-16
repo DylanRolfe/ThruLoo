@@ -1,0 +1,174 @@
+osm_id,code,name,kind,levels,height_m,source,footprint_m2
+way/43250639,CIF,Columbia Icefield,sports_centre,,11,default,8315
+way/43250596,PAC,Physical Activities Complex,university,,12,default,6813
+way/43250624,HH,J. G. Hagey Hall of the Humanities,university,,12,default,6675
+way/692358718,,Feridun Hamdullahpur Field House,sports_centre,,11,default,6207
+way/1246717243,REN,Renison University College,university,,12,default,5897
+way/43250606,PAS,"Psychology, Anthropology & Sociology",university,,12,default,5764
+way/43250638,OPT,School of Optometry & Vision Science,university,,12,default,5761
+way/43250643,BMH,B.C. Matthews Hall,university,,12,default,4479
+way/43250612,STJ,St. Jerome's University,university,,12,default,4113
+way/170097694,TJB,Toby Jenkins Applied Health Research Building,university,,12,default,3586
+way/299688727,,Cora Building,office,,12,default,3458
+way/43250608,UTD,United College,university,,12,default,2815
+way/382726586,AHS,Applied Health Sciences Expansion Building,university,,12,default,2048
+way/175808262,RAC,Research Advancement Centre,university,,12,default,1915
+way/175808266,RA2,Research Advancement Centre 2,university,,12,default,1883
+way/43250641,CSB,Central Services Building,university,,12,default,1325
+way/382758901,,St. Jerome's Academic Centre SJ2,university,,12,default,1291
+way/142917787,LHI,Lyle S. Hallman Institute for Health Promotion,university,,12,default,1141
+way/43250617,UC,University Club,university,,12,default,874
+way/43250609,MHR,Minota Hagey Residence,dormitory,,13,default,800
+way/270412928,,Mackenzie King Village,yes,,8,default,758
+way/142821939,,Block C,terrace,,6.5,default,634
+way/43250623,,St. Jerome's University,university,,12,default,599
+way/142821935,,Block B,terrace,,6.5,default,592
+way/142821936,,Block A,terrace,,6.5,default,565
+way/966285682,,,university,,12,default,545
+way/154544950,,,greenhouse,,4,default,497
+way/130345096,,Conrad Grebel University College,college,,12,default,403
+way/293225023,,South 1,dormitory,,13,default,374
+way/293225025,,South 3,dormitory,,13,default,371
+way/293225027,,South 5,dormitory,,13,default,350
+way/293225026,,South 4,dormitory,,13,default,336
+way/293225028,,South 6,dormitory,,13,default,326
+way/293225024,,South 2,dormitory,,13,default,323
+way/293219222,,West 1,dormitory,,13,default,301
+way/1035250378,,,roof,,3.5,default,293
+way/814333735,,,yes,,8,default,293
+way/144575020,,Conrad Grebel University College,chapel,,9,default,283
+way/1028284843,,,yes,,8,default,246
+way/145890265,GH,Graduate House,house,,6.5,default,238
+way/1035250382,,,roof,,3.5,default,206
+way/1035250383,,,roof,,3.5,default,197
+way/1035250376,,,roof,,3.5,default,196
+way/1035250377,,,roof,,3.5,default,195
+way/1035250380,,,roof,,3.5,default,189
+way/1035250381,,,roof,,3.5,default,188
+way/1544852727,,Skén:nen Tsi Nón:we Tewaya’taróroks,yes,,8,default,152
+way/141711583,BRH,Brubacher House,detached,,6.5,default,139
+way/154544953,,,yes,,8,default,81
+way/996674217,,,yes,,8,default,69
+way/294030019,,,yes,,8,default,57
+way/294269724,,,yes,,8,default,53
+way/154544949,,,yes,,8,default,50
+way/182921021,,,shed,,2.8,default,45
+way/268467672,,,roof,,3.5,default,45
+way/154544951,,,yes,,8,default,44
+way/182920244,,,roof,,3.5,default,33
+way/894436106,,Seagram Dr Interlocking,service,,3.5,default,25
+way/294030020,,,yes,,8,default,23
+way/294269725,,,yes,,8,default,20
+way/1246720473,,,service,,3.5,default,18
+way/294030021,,,yes,,8,default,14
+way/1488890722,,,yes,,8,default,13
+way/1488890715,,,yes,,8,default,9
+way/966269132,,,shed,,2.8,default,9
+way/966815556,,,shed,,2.8,default,9
+way/1488890714,,,yes,,8,default,7
+way/966269133,,,shed,,2.8,default,5
+way/1557992531,,,yes,,8,default,3
+way/43250605,E3,Engineering 3,university,3,12,osm:levels,10308
+relation/8765264,DC,William G. Davis Computer Research Centre,university,4,16,osm:levels,10025
+way/306589233,,,garage,2,8,osm:levels,7991
+way/43250627,SLC,Student Life Centre,university,3,12,osm:levels,7270
+way/43250646,ECH,East Campus Hall,industrial,2,8,osm:levels,6332
+way/43250630,MC,Mathematics & Computer,university,7,28,osm:levels,5338
+way/43250604,E2,Engineering 2,university,4,16,osm:levels,5246
+way/182091547,QNC,Mike & Ophelia Lazaridis Quantum Nano Centre,university,7,28,osm:levels,4904
+way/147379102,DWE,Douglas Wright Engineering Building,university,3,12,osm:levels,4774
+way/350394201,GSC,General Services Complex,university,2,8,osm:levels,4712
+way/43250631,PHY,Physics,university,3,12,osm:levels,4449
+way/43250635,CPH,Carl A. Pollock Hall,university,4,16,osm:levels,4288
+way/382735686,PSE,Pearl Sullivan Engineering Building,university,8,32,osm:levels,3882
+way/141712445,V1,Student Village 1 Central Complex,dormitory,7,22.4,osm:levels,3596
+way/188703119,EIT,Centre for Environmental and Information Technology,university,6,24,osm:levels,3501
+way/43250620,NH,Ira G. Needles Hall,university,4,16,osm:levels,3467
+way/28196791,,Accelerator Building,office,3,12,osm:levels,3351
+way/170097693,,innoTECH Building,office,3,12,osm:levels,3203
+way/43325856,EC1,East Campus 1,office,2,8,osm:levels,3125
+way/43250629,ESC,Earth Sciences & Chemistry,university,3,12,osm:levels,3022
+way/43250588,,Ron Eydt Village,dormitory,3,9.6,osm:levels,2994
+way/382872689,CMH,Claudette Millar Hall,dormitory,12,38.4,osm:levels,2920
+way/148285604,MKV,Mackenzie King Village,dormitory,5,16,osm:levels,2917
+way/43250589,,Ron Eydt Village,dormitory,3,9.6,osm:levels,2914
+way/43250610,CGR,Conrad Grebel University College,college,3,12,osm:levels,2893
+way/145078340,,Wilmot Court,dormitory,3,9.6,osm:levels,2788
+way/39277289,,OpenText Building 1,office,4,16,osm:levels,2782
+way/145078454,,Woolwich Court,dormitory,3,9.6,osm:levels,2743
+way/51125806,E5,Engineering 5,university,6,24,osm:levels,2741
+way/145078448,,Waterloo Court,dormitory,3,9.6,osm:levels,2646
+way/370204260,STC,Science Teaching Complex,university,5,20,osm:levels,2642
+way/145078401,,Wellesley Court,dormitory,3,9.6,osm:levels,2566
+way/43250626,LIB,Dana Porter Library,university,2,8,osm:levels,2459
+way/43325864,EC4,East Campus 4,office,2,8,osm:levels,2334
+way/43250632,B1,Biology 1,university,3,12,osm:levels,2306
+way/59036407,EC5,East Campus 5,office,4,16,osm:levels,2272
+way/43250634,C2,Chemistry 2,university,4,16,osm:levels,2253
+way/43250611,HS,Health Services,university,2,8,osm:levels,2241
+way/306589249,,OpenText Building 2,office,5,20,osm:levels,2226
+way/43250628,B2,Biology 2,university,3,12,osm:levels,2145
+way/43250607,RCH,J. R. Coutts Engineering Lecture Hall,university,2,8,osm:levels,2123
+way/43250640,FED,Federation Hall,university,2,8,osm:levels,2122
+way/43250590,REV,Ron Eydt Village,university,3,12,osm:levels,2111
+way/43250621,ML,Modern Languages,university,3,12,osm:levels,2091
+way/440380006,,St. Jerome's University Residence Buildings,school,7,28,osm:levels,2076
+way/1342934521,M3,Mathematics 3,university,4,16,osm:levels,2063
+way/43250618,STJ,St. Jerome's University,university,4,16,osm:levels,1997
+way/158807251,E6,Engineering 6,university,6,24,osm:levels,1911
+way/43250642,COM,Commisary,university,1,4,osm:levels,1832
+way/43325858,EC2,East Campus 2,office,4,16,osm:levels,1742
+way/368656349,,Bright Starts Co-operative Early Learning Centre,university,1,4,osm:levels,1723
+way/43325857,EC3,East Campus 3,office,2,8,osm:levels,1675
+way/43250619,AL,Arts Lecture Hall,university,2,8,osm:levels,1652
+way/141712447,,,dormitory,4,12.8,osm:levels,1460
+way/141712451,,,dormitory,4,12.8,osm:levels,1442
+way/154056255,ERC,Energy Research Centre,university,4,16,osm:levels,1385
+way/102691857,,United College Graduate Apartments,apartments,6,19.2,osm:levels,1161
+way/143668848,UWP,UW Place Grand Commons,university,1,4,osm:levels,810
+way/45845764,,Eby Hall,dormitory,13,41.6,osm:levels,723
+way/143668849,,Beck Hall,dormitory,13,41.6,osm:levels,721
+way/141712436,,,yes,4,16,osm:levels,689
+way/731803685,AVR,Autonomous Vehicle Research and Intelligence Lab,university,1,4,osm:levels,613
+way/43250591,TH,Tutor's Houses,university,3,14,osm:levels,489
+way/423464593,,United College Green Wing,university,7,28,osm:levels,480
+way/182922400,,East 3,dormitory,4,12.8,osm:levels,427
+way/141718267,,East 5,dormitory,4,12.8,osm:levels,406
+way/182922404,,East 6,dormitory,4,12.8,osm:levels,392
+way/141712434,,West 2,dormitory,4,12.8,osm:levels,391
+way/141712440,,North 5,dormitory,4,12.8,osm:levels,385
+way/182922411,,North 4,dormitory,4,12.8,osm:levels,377
+way/182922421,,North 1,dormitory,4,12.8,osm:levels,377
+way/293219225,,West 3,dormitory,3,9.6,osm:levels,363
+way/182922417,,North 3,dormitory,4,12.8,osm:levels,361
+way/293219226,,West 4,dormitory,3,9.6,osm:levels,357
+way/182922418,,North 2,dormitory,4,12.8,osm:levels,350
+way/1028284842,,,yes,2,8,osm:levels,344
+way/293219227,,West 5,dormitory,3,9.6,osm:levels,342
+way/293219228,,West 6,dormitory,3,9.6,osm:levels,337
+way/141711588,,South 8,dormitory,4,12.8,osm:levels,336
+way/182922407,,East 4,dormitory,4,12.8,osm:levels,336
+way/350394202,,South 7,dormitory,4,12.8,osm:levels,331
+way/182922401,,North 6,dormitory,4,12.8,osm:levels,328
+way/182922415,,East 1,dormitory,4,12.8,osm:levels,323
+way/141718251,,East 2,dormitory,4,12.8,osm:levels,316
+way/1029186776,,,yes,1,4,osm:levels,252
+way/182922406,,,yes,4,16,osm:levels,102
+way/1028424096,,,bridge,2,8,osm:levels,95
+way/1027588311,,,yes,2,8,osm:levels,68
+way/1027581483,,,bridge,2,8,osm:levels,57
+way/1028284848,,,yes,3,12,osm:levels,49
+way/1027437247,,,yes,2,8,osm:levels,37
+way/141718301,,,university,1,4,osm:levels,37
+way/182922408,,,yes,4,16,osm:levels,31
+way/182922419,,,yes,4,16,osm:levels,26
+way/182922405,,,yes,4,16,osm:levels,21
+way/727611561,,,yes,1,4,osm:levels,19
+way/727611560,,,shed,1,4,osm:levels,16
+way/182922420,,,yes,4,16,osm:levels,14
+way/350394203,,,yes,4,16,osm:levels,12
+way/182922409,,,yes,4,16,osm:levels,10
+way/182922416,,,yes,4,16,osm:levels,10
+way/726382521,,,service,1,4,osm:levels,10
+way/182922403,,,yes,4,16,osm:levels,8
+way/182922402,,,yes,4,16,osm:levels,7

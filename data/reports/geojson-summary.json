@@ -1,0 +1,125 @@
+{
+  "osmTimestamp": "2026-11-12T22:46:50Z",
+  "fetchedAt": "2026-11-12T22:48:08.514Z",
+  "buildings": {
+    "total": 1069,
+    "campus": 178,
+    "campusWithCode": 68,
+    "campusNamed": 122,
+    "campusUnnamed": 56,
+    "campusHeightSource": {
+      "osm:levels": 104,
+      "default": 69,
+      "osm:height": 5
+    },
+    "allHeightSource": {
+      "osm:levels": 209,
+      "default": 855,
+      "osm:height": 5
+    },
+    "campusWithEntrances": 72,
+    "codedWithoutEntrances": [
+      "REN",
+      "BRH",
+      "LHI",
+      "UWP",
+      "TJB",
+      "RAC",
+      "RA2",
+      "TH",
+      "CGR",
+      "STJ",
+      "STJ",
+      "CSB",
+      "EC4",
+      "EC5",
+      "AVR"
+    ],
+    "withParts": 44
+  },
+  "parts": {
+    "total": 226,
+    "orphan": 3
+  },
+  "paths": {
+    "total": 2973,
+    "byKind": {
+      "road": 194,
+      "footway": 1177,
+      "service": 339,
+      "sidewalk": 230,
+      "path": 126,
+      "crossing": 170,
+      "cycleway": 100,
+      "parking_aisle": 274,
+      "steps": 140,
+      "platform": 27,
+      "pedestrian": 15,
+      "track": 1,
+      "corridor": 174,
+      "construction": 6
+    },
+    "byEnv": {
+      "outdoor": 2678,
+      "passage": 8,
+      "skywalk": 13,
+      "indoor": 239,
+      "covered": 29,
+      "tunnel": 6
+    }
+  },
+  "areas": {
+    "plaza": 15,
+    "platform": 5,
+    "park": 51,
+    "wood": 27,
+    "pitch": 33,
+    "water": 18,
+    "playground": 9,
+    "pool": 25,
+    "grass": 206,
+    "parking": 185,
+    "scrub": 11,
+    "wetland": 7,
+    "railway": 6,
+    "construction": 9,
+    "garden": 34
+  },
+  "lines": {
+    "light_rail": 5,
+    "stream": 37,
+    "fence": 48,
+    "hedge": 4,
+    "drain": 16,
+    "rail": 7,
+    "gate": 4,
+    "wall": 4,
+    "retaining_wall": 3,
+    "handrail": 2,
+    "kerb": 1,
+    "tree_row": 1
+  },
+  "entrances": {
+    "total": 278,
+    "byKind": {
+      "yes": 192,
+      "staircase": 3,
+      "main": 31,
+      "exit": 33,
+      "home": 7,
+      "emergency": 8,
+      "service": 3,
+      "secondary": 1
+    },
+    "withBuilding": 273
+  },
+  "points": {
+    "tree": 1698,
+    "crossing": 267,
+    "traffic_signals": 29,
+    "barrier": 205,
+    "street_lamp": 467,
+    "bus_stop": 38,
+    "elevator": 8
+  }
+}

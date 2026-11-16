@@ -1,0 +1,20 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>UW campus data preview</title>
+<style>
+  body { margin: 0; background: #222; font: 13px system-ui, sans-serif; color: #eee; }
+  nav { padding: 8px 12px; display: flex; gap: 14px; }
+  a { color: #9cf; }
+  img { display: block; max-width: 100vw; max-height: calc(100vh - 36px); margin: 0 auto; }
+</style>
+<nav>
+  <a href="?f=data-preview.svg">Whole campus</a>
+  <a href="?f=preview-rev.svg">REV area</a>
+  <a href="?f=preview-rch.svg">RCH area</a>
+  <span>Cleaned OSM data, © OpenStreetMap contributors. Regenerate with <code>node scripts/preview-svg.mjs</code>.</span>
+</nav>
+<img id="map" alt="map preview" />
+<script>
+  const f = new URLSearchParams(location.search).get('f') || 'data-preview.svg';
+  document.getElementById('map').src = /^[\w-]+\.svg$/.test(f) ? f : 'data-preview.svg';
+</script>

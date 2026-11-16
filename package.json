@@ -1,0 +1,47 @@
+{
+  "name": "uw-campus-3d",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "repository": { "type": "git", "url": "https://github.com/DylanRolfe/Waterloo-Walk.git" },
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Walkable 3D model of the University of Waterloo campus with walking routes and route flythroughs.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "data:fetch": "node scripts/fetch-osm.mjs",
+    "data:geojson": "node scripts/build-geojson.mjs",
+    "data:bake": "tsx scripts/bake.ts",
+    "data": "npm run data:geojson && npm run data:bake",
+    "shots": "node scripts/shots.mjs"
+  },
+  "dependencies": {
+    "@fontsource/barlow": "^5.3.0",
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@react-three/fiber": "^9.8.2",
+    "@react-three/rapier": "^2.2.0",
+    "@vercel/analytics": "^2.0.1",
+    "earcut": "^3.2.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.187.0",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/earcut": "^3.0.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "pdfjs-dist": "^6.5.438",
+    "playwright": "^1.65.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}

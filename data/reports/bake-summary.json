@@ -1,0 +1,113 @@
+{
+  "file": "public/data/campus.json",
+  "megabytes": 2.14,
+  "buildings": 1069,
+  "campusBuildings": 178,
+  "solidBuildings": 1010,
+  "buildingsWithParts": 41,
+  "codedWithoutDoor": [
+    "LSI"
+  ],
+  "areas": 641,
+  "ribbons": 2709,
+  "trees": 1697,
+  "wallGaps": 160,
+  "indoor": {
+    "hallways": 96,
+    "tunnels": 10,
+    "bridges": 12,
+    "stairwells": 53,
+    "doorsOutside": 43,
+    "doorsBetween": 8,
+    "skippedWalkways": 25,
+    "codes": 40,
+    "levelConflicts": 12,
+    "anchorsDropped": 0,
+    "matchedToOsm": {
+      "AL": "AL",
+      "B1": "B1",
+      "B2": "B2",
+      "BMH": "BMH",
+      "C2": "C2",
+      "CMH": "CMH",
+      "CPH": "CPH",
+      "DC": "DC",
+      "DP": "LIB",
+      "DWE": "DWE",
+      "E2": "E2",
+      "E3": "E3",
+      "E5": "E5",
+      "E6": "E6",
+      "E7": "PSE",
+      "EIT": "EIT",
+      "ERC": "ERC",
+      "ESC": "ESC",
+      "EV1": "EV1",
+      "EV2": "EV2",
+      "EV3": "EV3",
+      "EXP": "AHS",
+      "HH": "HH",
+      "M3": "M3",
+      "MC": "MC",
+      "MKV": "MKV",
+      "ML": "ML",
+      "NH": "NH",
+      "OPT": "OPT",
+      "PAC": "PAC",
+      "PAS": "PAS",
+      "PHY": "PHY",
+      "QNC": "QNC",
+      "RCH": "RCH",
+      "REV": "REV",
+      "SCH": "SCH",
+      "SLC": "SLC",
+      "STC": "STC",
+      "TC": "TC",
+      "V1": "V1"
+    },
+    "unmatched": [],
+    "buildingsWithAnchors": 35,
+    "edgesByKind": {
+      "door": 44,
+      "corridor": 117,
+      "tunnel": 10,
+      "stairs": 48,
+      "skywalk": 12
+    }
+  },
+  "places": [
+    "REV West Quad"
+  ],
+  "spawn": [
+    -811.62,
+    -93.49,
+    2.041
+  ],
+  "graph": {
+    "ways": 2549,
+    "components": 48,
+    "mainShare": 0.9869,
+    "droppedKm": 2.14,
+    "plazaEdges": 75,
+    "prunedInteriorSegments": 9,
+    "doorsDirect": 166,
+    "doorsSnapped": 62,
+    "doorsDropped": 0,
+    "doorsSynthetic": 66,
+    "syntheticOver25m": [
+      "way/814333735"
+    ],
+    "buildingsWithoutDoor": [],
+    "nodes": 4113,
+    "edges": 5406,
+    "totalKm": 169.9,
+    "indoor": {
+      "km": 4.611239494708124,
+      "exitsAtEntrances": 38,
+      "exitsSnapped": 5,
+      "exitsDropped": 0,
+      "unreachableMetres": 0,
+      "deadEndMetres": 440
+    }
+  }
+}
